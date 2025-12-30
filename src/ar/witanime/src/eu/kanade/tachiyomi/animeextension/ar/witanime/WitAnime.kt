@@ -111,7 +111,7 @@ class WitAnime : ConfigurableAnimeSource, ParsedAnimeHttpSource() {
             .map(::episodeFromElement)
             .reversed()
 
-    override fun episodeListSelector() = "div.ehover6 > div.episodes-card-title > h3 a"
+    override fun episodeListSelector() = "div.ehover6 > div.episodes-card-title > h3 > a"
 
     override fun episodeFromElement(element: Element) = SEpisode.create().apply {
         setUrlWithoutDomain(element.getEncodedUrl())
