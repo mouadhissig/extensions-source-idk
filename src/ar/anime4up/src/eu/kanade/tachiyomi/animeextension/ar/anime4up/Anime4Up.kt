@@ -38,7 +38,7 @@ class Anime4Up : ConfigurableAnimeSource, ParsedAnimeHttpSource() {
 
     override val name = "Anime4Up"
 
-    override val baseUrl = "https://anime4up.rest"
+    override val baseUrl = "https://w1.anime4up.rest"
 
     override val lang = "ar"
 
